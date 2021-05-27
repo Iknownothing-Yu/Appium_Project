@@ -21,6 +21,7 @@ class NormalCall():
 
         #self.driver.find_element_by_id('com.google.android.dialer:id/dialpad_voice_call_button').click()
         self.driver.find_element_by_accessibility_id('dial').click()
+        #changed
 
 
 
