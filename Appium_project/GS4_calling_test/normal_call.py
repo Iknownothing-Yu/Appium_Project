@@ -13,13 +13,14 @@ class NormalCall():
         time.sleep(1)
 
         #dialing
-        self.nums = ['zero', 'one', 'seven', 'six', 'three', 'four', 'three', 'two', 'nine', 'five', 'eight', 'seven']
+        self.nums = ['zero', 'one', 'seven', 'six', 'four', 'seven', 'one', 'three', 'five', 'five', 'six', 'zero']
         for ele in self.nums:
             self.dialer = self.driver.find_element_by_id(self.first_part_id + ele)
             print('current number is : ',self.first_part_id + ele)
             self.dialer.click()
 
-        self.driver.find_element_by_id('com.google.android.dialer:id/dialpad_voice_call_button').click()
+        #self.driver.find_element_by_id('com.google.android.dialer:id/dialpad_voice_call_button').click()
+        self.driver.find_element_by_accessibility_id('dial').click()
 
 
 
